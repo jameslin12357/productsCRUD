@@ -13,6 +13,12 @@
 </head>
 <body>
 
+<!--<div class="demoTable">
+  <div class="layui-inline">
+    <input class="layui-input" name="id" id="inputSearchProduct" autocomplete="off">
+  </div>
+  <button class="layui-btn" data-type="reload" onclick="searchProduct()">搜索</button>
+</div>-->
 <table class="layui-hide" id="test" lay-filter="test"></table>
 
 <script type="text/html" id="barDemo">
@@ -20,6 +26,19 @@
   <a class="layui-btn layui-btn-xs" lay-event="edit">编辑</a>
   <a class="layui-btn layui-btn-danger layui-btn-xs" lay-event="del">删除</a>
 </script>
+<script type="text/html" id="barDemo2">
+<a class="layui-btn layui-btn-primary layui-btn-xs" lay-event="create">新建</a>
+<div id="containerSearch" class="demoTable">
+  <div class="layui-inline">
+    <input class="layui-input layui-input-sm" name="id" id="inputSearchProduct" autocomplete="off">
+  </div>
+  <button class="layui-btn layui-btn-xs" data-type="reload" onclick="searchProduct()">搜索</button>
+</div>
+  
+</script>
+    <script src="./public/jquery-easyui-1.7.0/jquery.min.js"></script>
+    <!--<script src="../../../HtmlLibs/easyui/jquery.easyui.min.js"></script>
+    <script src="../../../HtmlLibs/easyui/locale/easyui-lang-zh_CN.js"></script>-->
 <script src="./public/layui-v2.5.6/layui/layui.js" charset="utf-8"></script>
 <!-- 注意：如果你直接复制所有代码到本地，上述js路径需要改成你本地的 -->
 <script src="./index.js" charset="utf-8"></script>
